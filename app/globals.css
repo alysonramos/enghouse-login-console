@@ -1,6 +1,16 @@
+@import 'primereact/resources/themes/lara-light-indigo/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom overrides */
+.p-invalid .p-inputtext {
+  @apply border-red-500 ring-red-500;
+}
 
 :root {
   --background: #ffffff;
@@ -18,4 +28,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
 }
