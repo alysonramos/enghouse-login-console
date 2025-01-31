@@ -115,11 +115,13 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onSubmit, isSubmitting }) 
       </div>
 
       <div className="flex justify-center space-x-4 mt-8">
-        <a href="#" className="text-sm text-gray-600 hover:text-gray-800">
-          Ajuda
+        <a href="#" className="text-sm text-gray-600 hover:text-gray-800 flex">
+          <i className="pi pi-question-circle my-auto mx-2"></i> 
+          <p className='my-auto'>Ajuda</p>
         </a>
-        <a href="#" className="text-sm text-gray-600 hover:text-gray-800">
-          Privacidade
+        <a href="#" className="text-sm text-gray-600 hover:text-gray-800 flex">
+          <i className="pi pi-shield my-auto mx-2"></i> 
+          <p className="">Privacidade</p>
         </a>
       </div>
     </form>

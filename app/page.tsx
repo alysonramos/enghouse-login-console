@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Toast } from 'primereact/toast';
 import { JSX, useRef, useState } from 'react';
 // import { useTranslation } from 'react-i18next';
+import 'primeicons/primeicons.css';
 import { Button } from 'primereact/button';
 import ReactCountryFlag from "react-country-flag";
 import InitialScreenPhoto from '../public/images/initial-screen.webp';
@@ -16,7 +17,6 @@ import OrganizationScreenForm from "./components/OrganizationScreen/Organization
 import { ProductScreen } from './components/ProductScreen/ProductScreen';
 import TalkToSpecialistScreenForm from './components/TalkToSpecialistScreenForm/TalkToSpecialistScreenForm';
 type ElementKey = "LOGIN" | "PRODUCT_SCREEN" | "ENTERPRISE" | "ORGANIZATION" | "ADDRESS" | "ACCOUNT_MANAGER" | "TALK_TO_SPECIALIST";
-
 
 export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -103,6 +103,7 @@ export default function Home() {
 
       <div className="w-full md:w-2/3 min-h-screen flex items-center justify-center p-4">
         <div className="w-full max-w-md rounded-xl shadow-lg p-8">
+        
           <Image
             src={Logo}
             alt="Navita Logo"
